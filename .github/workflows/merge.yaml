@@ -7,7 +7,7 @@ jobs:
   add-license:
     runs-on: ubuntu-latest
     env:
-      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - name: <YOUR CHANGES> # the physical changes you want to make to your repository
